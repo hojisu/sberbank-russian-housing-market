@@ -28,7 +28,7 @@ https://www.kaggle.com/c/sberbank-russian-housing-market
 회귀 성능 향상을 위해서 가격예측에 영향을 주는 큰 레버리지를 가진 데이터를 찾아야 했습니다. Cook’s Distance를 사용하여 회귀 분석 시 잔차와 레버리지가 큰 데이터들을 살펴보았습니다.회귀분석모형 진단은 잔차 정규성 테스트와 부분회귀플롯을 그려 확인하였습니다. 그리고 교차검증을 통해 성능을 확인하였습니다.
 
 ## 모델링
-초기 접근 방식은 기본적인 전처리 후 StatsModels의 Ordinary Least Square부터 Scikit-Learn의 Elastic Nets, DecisionTree Regressor, RandomForest Regressor, Support Vector Regressor, XGBoost를 사용하여 퍼포먼스가 가장 좋은 모델을 선택하고 반복적인 피쳐 엔지니어링과 모델 튜닝을 진행하였습니다. 모델별 10겹 cross validation을 통해 XGBoost의 RMSLE가 가장 낮게 나온 것을 확인하였습니다.
+초기 접근 방식은 기본적인 전처리 후 StatsModels의 Ordinary Least Square부터 Scikit-Learn의 DecisionTree Regressor, RandomForest Regressor, Support Vector Regressor, XGBoost를 사용하여 퍼포먼스가 가장 좋은 모델을 선택하고 반복적인 피쳐 엔지니어링과 모델 튜닝을 진행하였습니다. 모델별 10겹 cross validation을 통해 XGBoost의 RMSLE가 가장 낮게 나온 것을 확인하였습니다.
 
 ## 개선 할 점
 XGBoost의 Cross validation한 결과와 캐글에 submission한 score값의 차이가 있었습니다. XGBoost에서의 과최적화가 발생한 것으로 보입니다. XGBoost의 과최적화 방지에 관하여 좀 더 연구할 필요가 있습니다. 
