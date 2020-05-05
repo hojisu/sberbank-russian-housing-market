@@ -26,10 +26,10 @@ https://www.kaggle.com/c/sberbank-russian-housing-market
 독립변수가 약 350개에 달해 차원축소가 필요하다고 판단하였습니다. F 검정을 통해 각 독립변수가 종속변수에 가진 영향력을 살펴보고 p-value가 0.05보다 크면 중요도가 작다고 판단하여 제거하였습니다. 또한 다중공선성을 없애기 위해 Variance Inflation Factor를 계산하여 Greedy 방법으로 독립변수들을 하나씩 줄여 차원축소를 진행하였습니다.
 
 ## Outlier와 잔차 정규성 테스트
-회귀 성능 향상을 위해서 가격예측에 영향을 주는 큰 레버리지를 가진 데이터를 찾아야 했습니다. Cook’s Distance를 사용하여 회귀 분석 시 잔차와 레버리지가 큰 데이터들을 살펴보았습니다.회귀분석모형 진단은 잔차 정규성 테스트와 부분회귀플롯을 그려 확인하였습니다. 그리고 교차검증을 통해 성능을 확인하였습니다.
+회귀 성능 향상을 위해서 가격예측에 영향을 주는 큰 레버리지를 가진 데이터를 찾아야 했습니다. Cook’s Distance를 사용하여 회귀 분석 시 잔차와 레버리지가 큰 데이터들을 살펴보았습니다.QQ Plot과 Residual Plot을 그려서 잔차가 정규성을 따르는지 확인하고 부분회귀 플롯 및 교차 검증을 통해 성능을 확인하였습니다.
 
 ## 모델링
-기본적인 전처리 후 StatsModels의 Ordinary Least Square와 정규화 적용된 Ordinary Least Square, XGBoost 모델들을 사용하여 퍼포먼스를 비교하였습니다.
+기본적인 전처리 후 StatsModels의 Ordinary Least Square와 정규화 적용된 Ordinary Least Square, XGBoost 모델들을 사용하여 퍼포먼스를 비교하였습니다. 비선형 모델인 XGBoost의 feature importance를 통해 회귀분석에서 선택된 요소들의 차이점도 확인하였습니다.
 
 ## 개선 할 점
 OLS와 XGBoost 모델의 퍼포먼스의 차이가 근소하였습니다. 반복적인 Feature Engineering과 모델 튜닝이 필요합니다. 
