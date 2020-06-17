@@ -11,7 +11,7 @@ https://www.kaggle.com/c/sberbank-russian-housing-market
 ### [01. Exploratory Data Analysis](https://github.com/hojisu/sberbank-russian-housing-market/tree/master/01-Exploratory-Data-Analysis)  
 ### [02. Preprocessing & Feature Engineering](https://github.com/hojisu/sberbank-russian-housing-market/tree/master/02-Preprocessing-Feature-Engineering)  
 ### [03. Modeling with StatsModels](https://github.com/hojisu/sberbank-russian-housing-market/tree/master/03-Modeling-with-StatsModels)  
-### [04. Modeling with XGBoost](https://github.com/hojisu/sberbank-russian-housing-market/tree/master/04-Modeling-with-Scikit-Learn-Regressor)  
+### [04. Modeling with XGBoost](https://github.com/hojisu/sberbank-russian-housing-market/tree/master/04-Modeling-with-XGBoost)  
 ### [05. Sberbank Russian Housing Market Price Prediction PPT](https://github.com/hojisu/sberbank-russian-housing-market/blob/master/05-Sberbank-Russian-Housing-Market-Price-Prediction-PPT/Sberbank-Russian-Housing-Market-Price-Prediction-PPT.pdf)
 
 ***
